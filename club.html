@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier JavaScript by Eya Harbi</title>
+    <link href="./club.css" rel="stylesheet">
+    <script src="./club.js" defer></script>
+
+</head>
+
+<body>
+    <h1 class='title'>
+        Ajouter un club
+    </h1>
+
+    <form action="./" method="post">
+        <div id="responsableInput" width="300px">
+            <h4> Responsable du club: </h4>
+
+            <div class="inputWrapper">
+                <label for="fname"> Nom: </label>
+                <input type="text" id="fname" name="fname">
+            </div>
+
+            <div class="inputWrapper">
+                <label for="lname"> Prenom: </label>
+                <input type="text" id="lname" name="lname">
+            </div>
+
+            <div class="inputWrapper">
+                <label for="mail"> E-mail du Responsable: </label>
+                <input type="email" id="mail" name="mail">
+            </div>
+
+            <div class="inputWrapper">
+                <label for="mailConfirmation"> Confirmation E-mail du Responsable:
+                </label>
+                <input type="email" id="mailConfirmation" name="mailConfirmation">
+            </div>
+
+            <div class="inputWrapper">
+                <label for="password"> Mot de passe: </label>
+                <input type="password" id="password" name="password">
+            </div>
+
+        </div>
+
+
+        <div id="clubInput">
+            <div class="inputWrapper">
+                <label for="NameClub">Nom Club: </label>
+                <input type="text" id="NameClub" name="NameClub">
+            </div>
+            <div class="inputWrapper">
+                <label for="DateFondation">Date Fondation: </label>
+                <input type="date" id="DateFondation" name="DateFondation">
+            </div>
+            <div class="inputWrapper">
+                <label for="NbrMembers">Nombre de membres: </label>
+                <input type="number" id="NbrMembers" name="NbrMembers">
+            </div>
+
+            <div class="inputWrapper">
+                <label for="categories">Categories: </label>
+                <select name="categories" id="categories">
+                    <option value="select">Select</option>
+                    <option value="Informatique">Informatique</option>
+                    <option value="Electronique">Electronique</option>
+                    <option value="mecanique">Mecanique</option>
+                    <option value="genieCivil">Genie Civil</option>
+                </select>
+            </div>
+
+            <div class="checkBoxInput">
+                <h4>Type d'acivite:</h4>
+
+                <div class="inputWrapper">
+                    <input type="checkbox" value="seminaire" id="seminaire" name="checkbox">
+                    <label for="seminaire">Seminaire</label>
+                </div>
+
+
+                <div class="inputWrapper">
+                    <input type="checkbox" value="formation" id="formation" name="checkbox">
+                    <label for="formation">Formation</label>
+                </div>
+
+                <div class="inputWrapper">
+                    <input type="checkbox" value="event" id="event" name="checkbox">
+                    <label for="event">Evenement</label>
+                </div>
+
+                <div class="inputWrapper">
+                    <input type="checkbox" value="teamBuilding" id="teamBuilding" name="checkbox">
+                    <label for="teamBuilding">Team Building</label>
+                </div>
+
+                <div class="inputWrapper">
+                    <input type="checkbox" value="autres" id="autres" name="checkbox">
+                    <label for="autres">Autres</label>
+                    <textarea id="textArea" name="autres" rows="4" cols="50">
+                    </textarea>
+
+
+                </div>
+            </div>
+            <div class="radioInput">
+                <h4>Type d'activités: </h4>
+                <div class="inputWrapper">
+                    <input type="radio" value="open" id="open" name="adhesion">
+                    <label for="open">Ouverte</label>
+                </div>
+
+                <div class="inputWrapper">
+                    <input type="radio" value="closed" id="closed" name="adhesion">
+                    <label for="closed">Fermee</label>
+                </div>
+
+            </div>
+
+            <div class="actions">
+                <input type="submit">
+                <button type="reset">Reset</button>
+            </div>
+
+        </div>
+    </form>
+</body>
+
+</html>
