@@ -81,15 +81,12 @@ const afficherError = msg => {
 const submitButton = document.querySelector('.actions input');
 submitButton.addEventListener('click', e => {
     e.preventDefault()
-    const text = document.getElementById('#textArea');
-    const autre = document.getElementsByName('autres');
-    if (autre.checked == true) {
-        alert("work")
-        text.style.display = "block";
-    } else {
-        text.style.display = "none";
-    }
 
     verif()
 
+})
+const autre = document.getElementsById('autres');
+autre.addEventListener('change', () => {
+    const text = document.getElementById('textArea')
+    text.style.display = "block"
 })
